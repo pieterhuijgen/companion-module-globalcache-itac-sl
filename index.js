@@ -41,7 +41,7 @@ instance.prototype.init_tcp = function() {
 	}
 
 	if (self.config.host) {
-		self.socket = new tcp(self.config.host, 4999);
+		self.socket = new tcp(self.config.host, 4998);
 
 		self.socket.on('status_change', function (status, message) {
 			self.status(status, message);
